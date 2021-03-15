@@ -24,8 +24,8 @@ jobs:
     - name: Önemli Dosyalar İndiriliyor
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/huilgetto/gettovds/main/Files/NGROK-US.bat -OutFile NGROK-US.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/huilgetto/gettovds/main/Files/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/huilgetto/gettovds/main/Files/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/vds73/gettovds/main/Files/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/vds73/gettovds/main/Files/loop.bat -OutFile loop.bat
     - name:  Ngrok İçin YML Dosyası Oluşturuluyor
       run: start NGROK-US.bat
     - name: RDP Erişimi Aktif Ediliyor
